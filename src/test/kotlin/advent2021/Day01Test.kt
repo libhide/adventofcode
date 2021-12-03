@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 class Day01Test {
 
-    private val input = Resources.resourceAsListOfInt("advent2021/Day01.txt")
+    private val input = Resources.resourceAsListOfInt("advent2021/day01.txt")
 
     @Test
     fun `test part 1`() {
