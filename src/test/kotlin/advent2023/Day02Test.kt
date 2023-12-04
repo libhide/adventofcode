@@ -11,13 +11,11 @@ class Day02Test {
     fun `test part 1`() {
         val sut = Day02(input = input)
         assertThat(sut.solvePart1()).isEqualTo(8)
-        sut.solvePart1()
     }
 
     @Test
     fun `test part 2`() {
         val sut = Day02(input = input)
         assertThat(sut.solvePart2()).isEqualTo(2286)
-        sut.solvePart2()
     }
 }
