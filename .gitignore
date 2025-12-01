@@ -1,0 +1,15 @@
+# Puzzle inputs (AoC asks not to share these)
+input.txt
+
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Go build cache
+*.out
