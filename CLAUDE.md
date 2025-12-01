@@ -24,14 +24,24 @@ go test ./dayXX
 go test ./...
 ```
 
+## Workflow
+
+Use `/solve` to start a puzzle session. The flow:
+1. User shares the puzzle after reading it themselves
+2. Socratic discussion—guide toward solution through questions, don't solve immediately
+3. User writes the Go code with Claude's guidance (more hand-holding early, less over time)
+4. Write tests with example input first, then run against real input
+5. Brief review of Go concepts learned
+
 ## Structure
 
 Each day should be organized as:
 ```
 dayXX/
-  main.go      # Solution code with main()
-  input.txt    # Puzzle input
-  main_test.go # Tests (optional)
+  main.go           # Entry point, reads input, calls Part1/Part2
+  solution.go       # Part1() and Part2() functions
+  solution_test.go  # Tests for both parts
+  input.txt         # Puzzle input (gitignored)
 ```
 
 ## Code Style
